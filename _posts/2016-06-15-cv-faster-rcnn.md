@@ -15,7 +15,7 @@ Faster-RCNN introduces a Region Proposal Network (RPN) that shares full-image co
 
 #### Architecture
 
-<img src="{{ site.baseurl }}/img/faster-rcnn-arch.png">
+<img src="{{ site.baseurl }}/posts_image/faster-rcnn-arch.png">
 
 #### Training
 
