@@ -1,24 +1,24 @@
 ---
 layout: post
-title: "[Computer-vision] Faster-RCNN: Towards Real-Time Object Detection with Region Proposal Networks"
+title: "[computer vision] Faster-RCNN: Towards Real-Time Object Detection with Region Proposal Networks"
 comments: true
 description: "faster RCNN paper"
 keywords: "computer vision, object detection, deep learning"
 author: Junjue Wang
 ---
 
-> (PDF)[http://arxiv.org/pdf/1506.01497v3.pdf]
+> [PDF](http://arxiv.org/pdf/1506.01497v3.pdf)
 
 ## Summary
 
 Faster-RCNN introduces a Region Proposal Network (RPN) that shares full-image convolutional features with detection network to reduce region proposal time, and therefore object recognition time. 5 FPS is achieved using RPN they proposed.
 
-## Techniques
-
 #### Architecture
+
 ![Arch](img/faster-rcnn-arch.png)
 
 #### Training
+
 A 4-step training algorithm is adopted:
 
 1. Finetune RPN using labeled image bounding boxes after initialized with ImageNet data
