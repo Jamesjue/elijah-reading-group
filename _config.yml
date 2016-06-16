@@ -10,7 +10,7 @@ baseurl: "/elijah-reading-group" # apply repo name if use it under gh-pages bran
 
 google_analytics: UA-XXXXX-XX
 repo: http://github.com/Jamesjue/elijah-reading-group
-disqus_shortname: "Jamesjue"
+disqus_shortname: "jamesjue"
 #twitter_username: "HeiswayiNrird"
 comments: true
 
