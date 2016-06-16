@@ -7,7 +7,7 @@ keywords: "computer vision, object detection, deep learning"
 author: Junjue Wang
 ---
 
-> PDF[http://arxiv.org/pdf/1506.01497v3.pdf]
+> (PDF)[http://arxiv.org/pdf/1506.01497v3.pdf]
 
 ## Summary
 
@@ -16,7 +16,7 @@ Faster-RCNN introduces a Region Proposal Network (RPN) that shares full-image co
 ## Techniques
 
 #### Architecture
-![Arch](img/faster-rcnn-arch)
+![Arch](img/faster-rcnn-arch.png)
 
 #### Training
 A 4-step training algorithm is adopted:
