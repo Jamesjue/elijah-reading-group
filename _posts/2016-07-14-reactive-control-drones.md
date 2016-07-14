@@ -17,15 +17,18 @@ Under reactive control, control decisions are taken only upon recognizing the ne
 
 ## Current Drone Architecture
 **Ground-control station (GCS)** configure mission parameters, such as coordinates to cover and actions to take at each waypoint
-**Autopilot Software** implements low-level control (PID) *autonomously* driving the drone to the enxt desired coordinate
+**Autopilot Software** implements low-level control (PID) *autonomously* driving the drone to the next desired coordinate
 
 <img src="{{ site.baseurl }}/posts_image/drone-arch.png">
 
 ## Low-level Control
 + Most PID controllers on drones are tuned so that only the Proportional component bear an influence
 + PID controllers run in time-triggered fashion:  every T time units, sensors are probed, control decisions are computed, and commands are sent to the actuators.
+
 <img src="{{ site.baseurl }}/posts_image/ardupilot-control-loop.png">
+
 + Authors observe that control output doesn't change often
+
 <img src="{{ site.baseurl }}/posts_image/control-output-not-change.png">
 
 # Reactive Control
@@ -38,7 +41,7 @@ Authors argue for reactive control.
 
 + enables more timely and adaptive control decisions
 + spares unnecessary processing, improving the utilization of the hardware
-+ lessens the need to overprovision control rates to handle extreme situations
++ lessens the need to over-provision control rates to handle extreme situations
 
 ## Challenges
 
@@ -47,8 +50,8 @@ Authors argue for reactive control.
 + Reactive control must run on resource-constrained embedded hardware
 
 ## Solutions
-+ Use a logistic regssion based On-line approach to determine how large changes in a sensor constitutes "significant". A small boot time at the beginning of runtime is needed to learn how large of sensor reading changes result in control output changes for each sensor.
-+ Sample sensors at the highest frequency available and use hyperperiod to group correlated sensor changes together. A failsafe mode is employed to run the control logic anyhow every 0.1 second.
++ Use a logistic regression based On-line approach to determine how large changes in a sensor constitutes "significant". A small boot time at the beginning of runtime is needed to learn how large of sensor reading changes result in control output changes for each sensor.
++ Sample sensors at the highest frequency available and use hyperperiod to group correlated sensor changes together. A fail-safe mode is employed to run the control logic anyhow every 0.1 second.
 + A specially designed reactive programming model is implemented to avoid "callback hell"
 
 # Result
