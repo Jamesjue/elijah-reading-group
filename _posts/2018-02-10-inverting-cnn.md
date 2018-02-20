@@ -18,7 +18,7 @@ This paper tries to reconstruct the original image from these representations
 (i.e., *inverting* the transformation).
 Such reconstruction provides insight into what the algorithm is looking for in an image.
 
-## Formulating reconstruction as a gradient-decent-able optimization problem
+## Formulating reconstruction as a gradient-descent-able optimization problem
 
 The paper formulates the reconstruction problem as an end-to-end optimization problem.
 It adjusts the pixel values of the reconstructed image (**x**) to minimize an objective function.
@@ -32,12 +32,12 @@ It initializes the input with different seeds to obtain different samples.
 
 This formulation treats the algorithm (CNN, SIFT, HOG) mostly as a black box.
 The only requirement is that the transformation needs to be **differentiable**,
-so that it can use gradient decent.
+so that it can use gradient descent.
 
 ### Implementing SIFT and HOG as DNN
 
 The paper describes how we can implement SIFT and HOG in the form of DNN
-so that they become **differentiable**, amenable to gradient decent.
+so that they become **differentiable**, amenable to gradient descent.
 Refer to the paper for details.
 
 ## Observations
