@@ -57,6 +57,8 @@
 #### Sensor-assisted face recognition system on smart glass via multi-view sparse representation classification (IPSN)
   * On-device face recognition using both the camera and IMUs
 
+#### Cognitive Assistance in the Workplace (IEEE Pervasive Computing)
+
 # Mobile Hardware and Software
 
 #### Draining our glass: an energy and heat characterization of Google Glass (APsys)
