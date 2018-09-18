@@ -25,3 +25,7 @@ A 4-step training algorithm is adopted:
 2. Train the classification network (initialized with IMageNet data) by Fast RCNN using proposals generated from step 1 RPN
 3. Fix the shared convolutional layers, only fine-tune only the layers unique to RPN
 4. Fix the shared convolutional layers, only fine-tune the layers unique to Fast RCNN
+
+## Related material
+
++ [A Brief History of CNNs in Image Segmentation: From R-CNN to Mask R-CNN](https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4)
